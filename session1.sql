@@ -1,3 +1,4 @@
+-- I wonder how many naming conventions this violates. probably all of them.
 CREATE DATABASE Uni;
 
 USE Uni;
