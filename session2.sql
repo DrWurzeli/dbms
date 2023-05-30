@@ -17,6 +17,7 @@ SELECT *
 FROM StudentAnmeldung
 WHERE StudentStadt = 'Koeln' AND StudentVorname = 'Max';
 
+--Anzahl erwarteter Zeichen, Nachkommastellen DECIMAL(x,y)
 CREATE TABLE Noten(
 	NotenID INT PRIMARY KEY NOT NULL IDENTITY(1,1),
 	Student INT,
@@ -50,7 +51,7 @@ SELECT * FROM StudentAnmeldung;
 INSERT INTO dbo.Noten(Student, Modul, Klausur1, Klausur3)
 VALUES (6,2,88,67);
 
---Zeile löschen
+--Zeile lÃ¶schen
 DELETE FROM dbo.Noten WHERE NotenID = 3;
 
 SELECT * FROM dbo.Module;
@@ -73,7 +74,7 @@ SET StudentVorname = 'Maximilian'
 WHERE StudentID = 1;
 
 SELECT * FROM Noten;
---Berechnung hinzufügen automatisch
+--Berechnung hinzufÃ¼gen automatisch
 UPDATE dbo.Noten
 SET Mittelwert=(Klausur1+Klausur2+Klausur3)/3;
 
